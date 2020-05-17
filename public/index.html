@@ -13,12 +13,21 @@
       data(){
         return {
           name: 'aaa',
-          age: 18
+          age: 18,
+          ccc: {
+            n: 'ggg',
+            k: 'lll',
+            y: {
+              o: 123
+            }
+          }
         }
       },
       computed(){},
       watch(){},
     })
+    vm._data.name = 'cccc'
+    console.log('ccc', vm._data)
   </script>
 </body>
 </html>
