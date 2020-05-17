@@ -14,20 +14,16 @@
         return {
           name: 'aaa',
           age: 18,
-          ccc: {
-            n: 'ggg',
-            k: 'lll',
-            y: {
-              o: 123
-            }
-          }
+          ccc: [
+            {k:1},
+            {m:2}
+          ]
         }
       },
       computed(){},
       watch(){},
     })
-    vm._data.name = 'cccc'
-    console.log('ccc', vm._data)
+    console.log(vm._data.ccc.push({u:3}))
   </script>
 </body>
 </html>
