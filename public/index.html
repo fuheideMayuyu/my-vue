@@ -6,24 +6,20 @@
   <title>Document</title>
 </head>
 <body>
+  <div id="app">
+    <p>{{name}}</p>
+    <p>{{age}}</p>
+  </div>
   <script src="/dist/umd/vue.js"></script>
   <script>
     let vm = new Vue({
       el: '#app',
       data(){
-        return {
-          name: 'aaa',
-          age: 18,
-          ccc: [
-            {k:1},
-            {m:2}
-          ]
-        }
+        return { name: 'aaa', age: 18,}
       },
       computed(){},
       watch(){},
     })
-    console.log(vm._data.ccc.push({u:3}))
   </script>
 </body>
 </html>
